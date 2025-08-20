@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Nórdico - Restaurante Viking em Campinas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-hammer"></i>
+                    <span>O NÓRDICO</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#sobre" class="nav-link">Nossa História</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">O NÓRDICO</h1>
+            <p class="hero-subtitle">Uma jornada épica pela cultura viking</p>
+            <p class="hero-description">Descubra sabores ancestrais em um ambiente rústico e acolhedor</p>
+            <a href="#cardapio" class="cta-button">
+                <i class="fas fa-scroll"></i>
+                Explorar Cardápio
+            </a>
+        </div>
+        <div class="runes-decoration">
+            <span>ᚱᛖᛋᛏᚨᚢᚱᚨᚾᛏᛖ</span>
+        </div>
+    </section>
+
+    <!-- Horários Section -->
+    <section class="horarios">
+        <div class="container">
+            <div class="horarios-grid">
+                <div class="horario-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Café da Manhã</h3>
+                    <p class="horario">07:00 - 11:00</p>
+                    <p class="descricao">Comece seu dia como um verdadeiro viking</p>
+                </div>
+                <div class="horario-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Almoço & Jantar</h3>
+                    <p class="horario">12:30 - 22:00</p>
+                    <p class="descricao">Banquetes dignos dos salões de Valhalla</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio Section -->
+    <section id="cardapio" class="cardapio">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <p class="section-subtitle">Pratos inspirados na tradição nórdica</p>
+            
+            <div class="cardapio-tabs">
+                <button class="tab-button active" data-tab="cafe">
+                    <i class="fas fa-sun"></i>
+                    Café da Manhã
+                </button>
+                <button class="tab-button" data-tab="almoco">
+                    <i class="fas fa-drumstick-bite"></i>
+                    Almoço & Jantar
+                </button>
+                <button class="tab-button" data-tab="bebidas">
+                    <i class="fas fa-wine-glass"></i>
+                    Bebidas
+                </button>
+            </div>
+
+            <!-- Café da Manhã -->
+            <div id="cafe" class="tab-content active">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h4>Mjölnir Pancakes</h4>
+                        <p>Panquecas robustas com mel selvagem e frutas vermelhas</p>
+                        <span class="price">R$ 28,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Odin's Porridge</h4>
+                        <p>Mingau de aveia com nozes, canela e compota de maçã</p>
+                        <span class="price">R$ 22,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Viking Bread</h4>
+                        <p>Pão artesanal com sementes, servido com manteiga de ervas</p>
+                        <span class="price">R$ 18,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Freyja's Eggs</h4>
+                        <p>Ovos mexidos com salmão defumado e endro fresco</p>
+                        <span class="price">R$ 32,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Almoço & Jantar -->
+            <div id="almoco" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h4>Thor's Hammer</h4>
+                        <p>Pernil de cordeiro assado com ervas nórdicas e batatas rústicas</p>
+                        <span class="price">R$ 68,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Ragnar's Feast</h4>
+                        <p>Salmão grelhado com molho de mostarda e mel, acompanha vegetais</p>
+                        <span class="price">R$ 58,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Valhalla Stew</h4>
+                        <p>Ensopado de carne com raízes, cogumelos e cerveja artesanal</p>
+                        <span class="price">R$ 52,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Loki's Surprise</h4>
+                        <p>Peixe branco com crosta de ervas e purê de batata-doce</p>
+                        <span class="price">R$ 48,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Berserker Ribs</h4>
+                        <p>Costela suína glaceada com molho barbecue nórdico</p>
+                        <span class="price">R$ 62,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Skol Mead</h4>
+                        <p>Hidromel artesanal - a bebida dos deuses</p>
+                        <span class="price">R$ 25,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div id="bebidas" class="tab-content">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <h4>Água Pura</h4>
+                        <p>Água mineral cristalina 500ml</p>
+                        <span class="price">R$ 4,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Sucos Naturais</h4>
+                        <p>Laranja ou Limão frescos 500ml</p>
+                        <span class="price">R$ 11,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Sucos de Polpa</h4>
+                        <p>Uva, Cajú, Morango ou Abacaxi 500ml</p>
+                        <span class="price">R$ 9,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Refrigerantes</h4>
+                        <p>Lata 350ml - diversos sabores</p>
+                        <span class="price">R$ 6,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Odin's Elixir</h4>
+                        <p>Drink refrescante de frutas vermelhas com hortelã e limão</p>
+                        <span class="price">R$ 18,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Thor's Thunder</h4>
+                        <p>Combinação energizante de maracujá, gengibre e mel</p>
+                        <span class="price">R$ 16,50</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Freyja's Garden</h4>
+                        <p>Drink floral com hibisco, maçã verde e água com gás</p>
+                        <span class="price">R$ 17,00</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Loki's Mystery</h4>
+                        <p>Surpresa tropical com abacaxi, coco e especiarias nórdicas</p>
+                        <span class="price">R$ 19,50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Nossa Saga</h2>
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <p>O Nórdico nasceu da paixão pela rica cultura viking e pela tradição culinária dos povos nórdicos. Nosso restaurante é mais que um local para refeições - é uma jornada no tempo.</p>
+                    
+                    <p>Em nosso salão rústico, cada detalhe foi pensado para transportar você aos grandes salões de Valhalla. Madeiras nobres, ferro forjado e a atmosfera acolhedora criam o ambiente perfeito para uma experiência gastronômica única.</p>
+                    
+                    <p>Nossos pratos são inspirados nas receitas ancestrais dos guerreiros nórdicos, adaptadas com ingredientes frescos e técnicas modernas, mantendo sempre o respeito pela tradição milenar.</p>
+                </div>
+                
+                <div class="sobre-images">
+                    <div class="image-container">
+                        <img id="saga-image-1" src="para ed. financeira.png" alt="Ambiente do Restaurante O Nórdico" class="saga-image">
+                        <div class="image-placeholder" id="placeholder-1">
+                            <i class="fas fa-image"></i>
+                            <p>Imagem 1 - Ambiente</p>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img id="saga-image-2" src="para ed. financeira.2.png" alt="Salão Nórdico do Restaurante" class="saga-image">
+                        <div class="image-placeholder" id="placeholder-2">
+                            <i class="fas fa-image"></i>
+                            <p>Imagem 2 - Pratos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="valores">
+                <div class="valor">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Tradição</h4>
+                    <p>Receitas ancestrais preservadas</p>
+                </div>
+                <div class="valor">
+                    <i class="fas fa-heart"></i>
+                    <h4>Experiência</h4>
+                    <p>Mais que uma refeição, uma jornada</p>
+                </div>
+                <div class="valor">
+                    <i class="fas fa-leaf"></i>
+                    <h4>Qualidade</h4>
+                    <p>Ingredientes frescos e selecionados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2 class="section-title">Encontre-nos</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Rua dos Bandeirantes, 707<br>Campinas - SP</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(19) 3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horários</h4>
+                            <p>Café: 07:00 - 11:00<br>Almoço/Jantar: 12:30 - 22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapa-placeholder">
+                    <i class="fas fa-map"></i>
+                    <p>Mapa interativo</p>
+                    <small>Rua dos Bandeirantes, 707 - Campinas</small>
+                </div>
+            </div>
+            <div class="reserva-info">
+                <h3>Venha viver a experiência nórdica!</h3>
+                <p>Não trabalhamos com delivery - nossa especialidade é proporcionar uma experiência única em nosso ambiente rústico e acolhedor.</p>
+                <a href="tel:+5519345678900" class="contact-button">
+                    <i class="fas fa-phone"></i>
+                    Fazer Reserva
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-hammer"></i>
+                    <span>O NÓRDICO</span>
+                </div>
+                <p>&copy; 2024 O Nórdico. Todos os direitos reservados.</p>
+                <div class="runes-small">ᚦᚨᚾᚲ ᚤᛟᚢ</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baixar Imagens do Restaurante</title>
+</head>
+<body>
+    <h2>Clique para baixar as imagens:</h2>
+    
+    <h3>Imagem 1 - Ambiente (salvar como: ambiente.jpg)</h3>
+    <img id="img1" style="max-width: 400px; border: 2px solid #333; margin: 10px;">
+    <br>
+    <button onclick="baixarImagem1()">Baixar Imagem 1</button>
+    
+    <h3>Imagem 2 - Salão (salvar como: salao.jpg)</h3>
+    <img id="img2" style="max-width: 400px; border: 2px solid #333; margin: 10px;">
+    <br>
+    <button onclick="baixarImagem2()">Baixar Imagem 2</button>
+    
+    <script>
+        // Carrega as imagens que você enviou
+        document.getElementById('img1').src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/...'; // Primeira imagem
+        document.getElementById('img2').src = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/...'; // Segunda imagem
+        
+        function baixarImagem1() {
+            const link = document.createElement('a');
+            link.download = 'ambiente.jpg';
+            link.href = document.getElementById('img1').src;
+            link.click();
+        }
+        
+        function baixarImagem2() {
+            const link = document.createElement('a');
+            link.download = 'salao.jpg';
+            link.href = document.getElementById('img2').src;
+            link.click();
+        }
+    </script>
+    
+    <p><strong>Instruções:</strong></p>
+    <ol>
+        <li>Clique nos botões para baixar as imagens</li>
+        <li>Salve-as na pasta: C:\Users\Matheus\Desktop\ed. financeira\</li>
+        <li>Nomeie como: ambiente.jpg e salao.jpg</li>
+        <li>As imagens aparecerão automaticamente no site!</li>
+    </ol>
+</body>
+</html>
